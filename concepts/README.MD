@@ -10,7 +10,7 @@
 - 32/64 bit - protected mode
 
 ## Interrupts
-Interrupts are a mechanism that allow the CPU temporarily to halt what it is doing and run some other, higher-priority instructions before returning to the original task.
+Interrupts are a mechanism that allow the CPU temporarily to halt what it is doing and run some other, higher-priority instructions before returning to the original task.\
 Interrupt Service Routines (ISR) - is simply a sequence of machine instructions, much like our boot sector code, that deals with a specific interrupt (e.g. perhaps to read new data from a disk drive or from a network card).
 
 ## CPU Registers
