@@ -6,6 +6,7 @@ Building MyOwn operating system from scratch
 2. Boot sector
    1. [Basic boot sector](./step011%20-%20basic%20boot%20sector)
    2. [Hello world](./step012%20-%20hello%20world%20boot%20sector)
+3. [Addresses and labels](./step020%20-%20addresses%20and%20labels)
 
 ## References
 ### Literature
