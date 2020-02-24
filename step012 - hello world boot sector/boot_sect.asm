@@ -10,18 +10,17 @@ mov al, 'e'
 int 0x10
 mov al, 'l'
 int 0x10
-mov al, 'l'
-int 0x10
+int 0x10			; print 2nd 'l'. Value in the register al haven't change
 mov al, 'o'
 int 0x10
 
-jmp $					; Jump to the current address ( i.e. forever ).
+jmp $				; Jump to the current address ( i.e. forever ).
 
 ;
 ; Padding and magic BIOS number.
 ;
 
-times 510-($-$$) db 0	; Pad the boot sector out with zeros
+times 510-($-$$) db 0		; Pad the boot sector out with zeros
 
-dw 0xaa55				; Last two bytes ( one word ) form the magic number,
-						; so BIOS knows we are a boot sector.
+dw 0xaa55			; Last two bytes ( one word ) form the magic number,
+				; so BIOS knows we are a boot sector.
