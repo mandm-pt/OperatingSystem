@@ -1,9 +1,14 @@
 # Basic understandings/know how
-- byte = 8 bits
-- short = 16 bits
-- int = 32 bits
-- long = 64 bits
-- word - is used to describe the size of the maximum processing unit of the current mode of the CPU: so in 16-bit real mode, a word refers to a 16-bit value; in 32-bit protected mode, a word refers to a 32-bit value
+
+## sizes
+
+| unit  | Size bits |
+| :---: | :-------: |
+| byte  |  8 bits   |
+| short |  16 bits  |
+|  int  |  32 bits  |
+| long  |  64 bits  |
+
 
 ## CPU modes
 - 16 bit - Real mode
@@ -34,3 +39,14 @@ All x86 CPUs have four general purpose registers. They act as variables, so we c
 	mov al, 0x23	; ax -> 0x5623, or in binary 01010110 00100011
 	mov ah, 0x16	; ax -> 0x1623, or in binary 00010110 00100011
 ```
+
+## Assembly code information
+- `word`: is used to describe the size of the maximum processing unit of the current mode of the CPU: so in 16-bit real mode, a word refers to a 16-bit value; in 32-bit protected mode, a word refers to a 32-bit value
+
+### NASM directives
+| Directive |  Purpose   | Size bytes | Size bits |
+| :-------: | :--------: | :--------: | :-------: |
+|    DB     |    Byte    |     1      |     8     |
+|    DW     |    Word    |     2      |    16     |
+|    DD     | Doubleword |     4      |    32     |
+|    DQ     |  Quadword  |     8      |    64     |
