@@ -21,14 +21,14 @@ All x86 CPUs have four general purpose registers. They act as variables, so we c
 - dx
 
 **Example of usage:** Copying between registers
-```x86asm
+```asm
 	mov ax, 1234	; store the decimal number 1234 in ax
 	mov cx, 0x234	; store the hex number 0 x234 in cx
 	mov dx, 't'	; store the ASCII code for letter ’t ’ in dx
 	mov bx, ax	; copy the value of ax into bx , so now bx == 1234
 ```
 **Example of usage:** Setting high and low bytes independently
-```x86asm
+```asm
 	mov ax, 0	; ax -> 0x0000, or in binary 00000000 00000000
 	mov ah, 0x56	; ax -> 0x5600, or in binary 01010110 00000000
 	mov al, 0x23	; ax -> 0x5623, or in binary 01010110 00100011
