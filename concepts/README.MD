@@ -68,14 +68,14 @@ Segmentation Registers are not used in extended mode (64bit).
 
 **Example of usage:** Copying between registers
 ```asm
-	mov ax, 1234	; store the decimal number 1234 in ax
-	mov cx, 0x234	; store the hex number 0 x234 in cx
-	mov dx, 't'	; store the ASCII code for letter ’t ’ in dx
-	mov bx, ax	; copy the value of ax into bx , so now bx == 1234
+	mov ax, 1234	; store the literal decimal number 1234 in ax
+	mov cx, 0x234	; store the literal hex number 0 x234 in cx
+	mov dx, 't'		; store the literal ASCII code for letter ’t ’ in dx
+	mov bx, ax		; copy the value in ax into bx , so now bx == 1234
 ```
 **Example of usage:** Setting high and low bytes independently
 ```asm
-	mov ax, 0	; ax -> 0x0000, or in binary 00000000 00000000
+	mov ax, 0		; ax -> 0x0000, or in binary 00000000 00000000
 	mov ah, 0x56	; ax -> 0x5600, or in binary 01010110 00000000
 	mov al, 0x23	; ax -> 0x5623, or in binary 01010110 00100011
 	mov ah, 0x16	; ax -> 0x1623, or in binary 00010110 00100011
