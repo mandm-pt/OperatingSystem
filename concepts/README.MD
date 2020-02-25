@@ -16,8 +16,8 @@
 - 64 bit - Extended mode
 
 ## Interrupts
-Interrupts are a mechanism that allow the CPU temporarily to halt what it is doing and run some other, higher-priority instructions before returning to the original task.\
-Interrupt Service Routines (ISR) - is simply a sequence of machine instructions, much like our boot sector code, that deals with a specific interrupt (e.g. perhaps to read new data from a disk drive or from a network card).
+Interrupts is a mechanism that allow the CPU temporarily to halt (interrupt) what it is doing and run some other, higher-priority, instructions before returning to the original task.\
+Interrupt Service Routines (ISR) - are simply a sequence of machine instructions, much like our boot sector code, that deal with a specific interrupt (e.g., read new data from a disk drive or from a network card).
 
 ## CPU Registers
 All x86 CPUs have four general purpose registers. They act as variables, so we can store we can store data temporarily during a particular routine.
