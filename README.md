@@ -1,12 +1,12 @@
 # Operating System
-Building MyOwn operating system from scratch
+Building My-Own operating system from scratch
 
 ## Stetps
-1. [Install necessary tools](./step010%20-%20necessary%20tools)
-2. Boot sector
-   1. [Basic boot sector](./step011%20-%20basic%20boot%20sector)
-   2. [Hello world](./step012%20-%20hello%20world%20boot%20sector)
-3. [Addresses and labels](./step020%20-%20addresses%20and%20labels)
+0. [Install necessary tools](./00_necessary_tools/)
+1. Boot sector
+   1. [Basic boot sector](./01_boot_sector/basic/)
+   2. [Hello world](./01_boot_sector/hello_world/)
+2. [Addresses and labels](./02_addresses_and_labels/)
 
 ## References
 ### Literature
