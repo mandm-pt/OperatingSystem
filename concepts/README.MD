@@ -43,14 +43,14 @@ There are 3 types of **Address Registers**:
 
 #### Pointer Registers
 |16bit|32bit|64bit|name|purpose|
-|:---:|:---:|:---:|:---:|:---|:---|
+|:---:|:---:|:---:|:---|:---|
 |bp|ebp|rbp|Base Pointer|Start of the stack|
 |sp|esp|rsp|Stack Pointer|Current location of the stack *tip*|
 |ip|||Instruction Pointer|The address of the next instruction to be executed|
 
 #### Index Registers
 |16bit|32bit|64bit|name|purpose|
-|:---:|:---:|:---:|:---:|:---|:---|
+|:---:|:---:|:---:|:---|:---|
 |si|esi|rsi|Source Index|Indexing sequential data source addressing|
 |di|edi|rdi|Destination Index|Indexing sequential data destination addressing|
 
