@@ -12,7 +12,8 @@
 
 ## CPU modes
 - 16 bit - Real mode
-- 32/64 bit - protected mode
+- 32 bit - Protected mode
+- 64 bit - Extended mode
 
 ## Interrupts
 Interrupts are a mechanism that allow the CPU temporarily to halt what it is doing and run some other, higher-priority instructions before returning to the original task.\
