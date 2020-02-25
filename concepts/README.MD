@@ -107,6 +107,7 @@ Status register holds the state of the CPU resulting of an operation (e.g., arit
 - `word`: is used to describe the size of the maximum processing unit of the current mode of the CPU: so in 16-bit real mode, a word refers to a 16-bit value; in 32-bit protected mode, a word refers to a 32-bit value
 
 ### NASM directives
+*DB* means "Data Byte"
 | Directive |  Purpose   | Size bytes | Size bits |
 | :-------: | :--------: | :--------: | :-------: |
 |    DB     |    Byte    |     1      |     8     |
