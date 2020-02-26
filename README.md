@@ -24,6 +24,7 @@ Building My-Own operating system from scratch
 
 ### Videos
 - [OS Development: Low-level Boot-Sector Programming - Nick Blundell](https://www.youtube.com/playlist?list=PLrJApd3VJDK0gVMsU3lZBVHBCgC1EeK--)
+- [Ben Eater channel](https://www.youtube.com/channel/UCS0N5baNlQWJCUrhCEo8WlA)
 
 ### Other Repos
 - [littleosbook/littleosbook ](https://github.com/littleosbook/littleosbook)
