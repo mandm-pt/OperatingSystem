@@ -17,3 +17,5 @@
     objdump -D -Mintel,i386 -b binary -m i386 foo.bin    # for 32-bit code
     objdump -D -Mintel,x86-64 -b binary -m i386 foo.bin  # for 64-bit code
     ```
+## Links
+[GNU Make](https://www.gnu.org/software/make/manual/make.html)

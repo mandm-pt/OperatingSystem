@@ -21,19 +21,19 @@ Interrupt Service Routines (ISR) - are simply a sequence of machine instructions
 
 ## CPU Registers
 *All* CPUs have registers. Registers are memory locations inside the CPU with direct connection to the CPU's data bus and, thus, being the fastest accessible memory locations for the CPU to process. In x86 architecture there are 3 types of registers:
-|Type|Purpose|
-|---|---|
-|Data registers|Data manipulation operations|
-|Address registers| Pointing to memory locations|
-|Status registers| Control flow operations|
+| Type              | Purpose                      |
+| ----------------- | ---------------------------- |
+| Data registers    | Data manipulation operations |
+| Address registers | Pointing to memory locations |
+| Status registers  | Control flow operations      |
 
 ### Data Registers
-|8+8bit|16bit|32bit|64bit|Name|Purpose|
-|:---:|:---:|:---:|:---:|:---|:---|
-|al+ah|ax|eax|rax|Accumulator|Arithmetic, logic and data transfer operations|
-|bl+bh|bx|ebx|rbx|Base|Hold address of start of data to be used|
-|cl+ch|cx|ecx|rcx|Counter|Incremental counter for loops (e.g., shifts, rotations)|
-|dl+dh|dx|edx|rdx|Data|I/O operations and multiplication and division in large values|
+| 8+8bit | 16bit | 32bit | 64bit | Name        | Purpose                                                        |
+| :----: | :---: | :---: | :---: | :---------- | :------------------------------------------------------------- |
+| al+ah  |  ax   |  eax  |  rax  | Accumulator | Arithmetic, logic and data transfer operations                 |
+| bl+bh  |  bx   |  ebx  |  rbx  | Base        | Hold address of start of data to be used                       |
+| cl+ch  |  cx   |  ecx  |  rcx  | Counter     | Incremental counter for loops (e.g., shifts, rotations)        |
+| dl+dh  |  dx   |  edx  |  rdx  | Data        | I/O operations and multiplication and division in large values |
 
 ### Address Registers
 There are 3 types of **Address Registers**:
@@ -42,25 +42,25 @@ There are 3 types of **Address Registers**:
 - Segmentation - Access other memory *banks*
 
 #### Pointer Registers
-|16bit|32bit|64bit|name|purpose|
-|:---:|:---:|:---:|:---|:---|
-|bp|ebp|rbp|Base Pointer|Start of the stack|
-|sp|esp|rsp|Stack Pointer|Current location of the stack *tip*|
-|ip|||Instruction Pointer|The address of the next instruction to be executed|
+| 16bit | 32bit | 64bit | name                | purpose                                            |
+| :---: | :---: | :---: | :------------------ | :------------------------------------------------- |
+|  bp   |  ebp  |  rbp  | Base Pointer        | Start of the stack                                 |
+|  sp   |  esp  |  rsp  | Stack Pointer       | Current location of the stack *tip*                |
+|  ip   |       |       | Instruction Pointer | The address of the next instruction to be executed |
 
 #### Index Registers
-|16bit|32bit|64bit|name|purpose|
-|:---:|:---:|:---:|:---|:---|
-|si|esi|rsi|Source Index|Indexing sequential data source addressing|
-|di|edi|rdi|Destination Index|Indexing sequential data destination addressing|
+| 16bit | 32bit | 64bit | name              | purpose                                         |
+| :---: | :---: | :---: | :---------------- | :---------------------------------------------- |
+|  si   |  esi  |  rsi  | Source Index      | Indexing sequential data source addressing      |
+|  di   |  edi  |  rdi  | Destination Index | Indexing sequential data destination addressing |
 
 #### Segmentation Registers
 Segmentation Registers are not used in extended mode (64bit).
-|16bit and 32bit|name|purpose|
-|:---:|:---|:---|
-|cs|Code Segment|Segment for *ip*|
-|ds,es,fs,gs|Data Segments|Segment for data addresses|
-|ss|Stack Segment|Segment for stack addresses|
+| 16bit and 32bit | name          | purpose                     |
+| :-------------: | :------------ | :-------------------------- |
+|       cs        | Code Segment  | Segment for *ip*            |
+|   ds,es,fs,gs   | Data Segments | Segment for data addresses  |
+|       ss        | Stack Segment | Segment for stack addresses |
 > **Note**:
 >
 > *ip* (Instruction Pointer) and *sp* (Stack Pointer) are always segmented with the values of *cs* and *ss* repectively, multiplied by 16 (decimal, i.e., 0x10 hexadecimal).> E.g., say *sp* is **0xAA** and *ss* is **0x55**. When referring to just *sp* it implicitly refers to:
@@ -83,25 +83,25 @@ Segmentation Registers are not used in extended mode (64bit).
 
 ### Status Register
 Status register holds the state of the CPU resulting of an operation (e.g., arithmetic, logic, etc.). Some examples:
-|bit|Symbol|Flag|Meaning|
-|---|:---:|---|---|
-|0 |CF  |Carry flag|Set if most significant bit carried or borrowed|
-|2 |PF  |Parity flag|Set if result of operation is even number of *1*s|
-|4 |AF  |Auxiliary carry flag|Carry or borrow from lower 4th bit to 5th (half-carry)|
-|6 |ZF  |Zero flag|Set if result of operation is *0*|
-|7 |SF  |Sign flag|Set if most significant bit is *1*|
-|8 |TF  |Trap flag|Used debugging and single stepping|
-|9 |IF  |Interrupt enable flag|If set allows CPU to accept maskable interrupts|
-|10|DF  |Direction flag|Direction of index addressing. *0* = incrementing.|
-|11|OF  |Overflow flag|Set when operation result is larger than data bus width|
-|12-13|IOPL|I/O Priviledge level|System flag|
-|14|NT  |Nested task flag|System flag|
-|16|RF  |Resume flag|System flag|
-|17|VM  |Virtual 8086 mode flag|System flag|
-|18|AC  |Alignment check flag (486+)|System flag|
-|19|VIF |Virutal interrupt flag|System flag|
-|20|VIP |Virtual interrupt pending flag|System flag|
-|21|ID  |ID flag|System flag|
+| bit   | Symbol | Flag                           | Meaning                                                 |
+| ----- | :----: | ------------------------------ | ------------------------------------------------------- |
+| 0     |   CF   | Carry flag                     | Set if most significant bit carried or borrowed         |
+| 2     |   PF   | Parity flag                    | Set if result of operation is even number of *1*s       |
+| 4     |   AF   | Auxiliary carry flag           | Carry or borrow from lower 4th bit to 5th (half-carry)  |
+| 6     |   ZF   | Zero flag                      | Set if result of operation is *0*                       |
+| 7     |   SF   | Sign flag                      | Set if most significant bit is *1*                      |
+| 8     |   TF   | Trap flag                      | Used debugging and single stepping                      |
+| 9     |   IF   | Interrupt enable flag          | If set allows CPU to accept maskable interrupts         |
+| 10    |   DF   | Direction flag                 | Direction of index addressing. *0* = incrementing.      |
+| 11    |   OF   | Overflow flag                  | Set when operation result is larger than data bus width |
+| 12-13 |  IOPL  | I/O Priviledge level           | System flag                                             |
+| 14    |   NT   | Nested task flag               | System flag                                             |
+| 16    |   RF   | Resume flag                    | System flag                                             |
+| 17    |   VM   | Virtual 8086 mode flag         | System flag                                             |
+| 18    |   AC   | Alignment check flag (486+)    | System flag                                             |
+| 19    |  VIF   | Virutal interrupt flag         | System flag                                             |
+| 20    |  VIP   | Virtual interrupt pending flag | System flag                                             |
+| 21    |   ID   | ID flag                        | System flag                                             |
 
 ## Assembly code information
 - `word`: is used to describe the size of the maximum processing unit of the current mode of the CPU: so in 16-bit real mode, a word refers to a 16-bit value; in 32-bit protected mode, a word refers to a 32-bit value
