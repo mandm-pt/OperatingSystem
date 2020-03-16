@@ -1,21 +1,29 @@
-# GDB 
+# GDB useful commands
 
-`gdb` - starts gdb program
+## General
 
-`target remote localhost:1234` - Debug remote host on port 1234
+* `gdb` - starts gdb program
+* `quit`: exit GDB
+* `kill`: kill running program
+* `target remote localhost:1234` - Debug remote host on port 1234
 
-`step` - 
-`next` - 
-`finish` - Continue until the current function returns
-`continue` or `c` - Continue normal execution
+## Breakpoints
+* `info reg <REGISTER>`: shows the value of register <REGISTER>
 
-`layout asm` - shows code
-`dashboard -layout assembly registers stack`
+## Breakpoints
+* `break *addr`: set breakpoint at address addr
+* `info break`: show defined breakpoints
 
-## Get information
-`info args` - 
-`info breakpoints` - 
-`info display` - 
+## Execution Control
+* `c` or `continue`: continue running the program until the next breakpoint
+* `nexti`: next machine instruction rather than source line
+* `jump *address`: resume executionat specified addr
+
+## Other
+* `set disassembly-flavor FLAVOR`: controls the disassembly style used by the disassemble
+  * `att` **default**: GDB will use the AT&T disassembly style (e.g. mov 0xc(%ebp),%eax) that is popular among Linux users.
+  * `intel`: GDB will use the Intel disassembly style (e.g. mov eax, DWORD PTR [ebp+0xc]) that is popular among Windows users.
+* `show disassembly-flavor`: displays disassembly style in use
 
 ## Formatting
 

@@ -23,7 +23,6 @@ jne al_not_x
 	mov al, '3'	; this won't be printed, since al = '2'
 	int 0x10
 
-
 al_not_x:
 	mov al, '4'
 	int 0x10
@@ -43,13 +42,11 @@ al_equals_4:
 al_equals_4_continue:
 
 
-mov al, '>'
-int 0x10
 
 
 ; IF-ELSE IF-ELSE
 ;		if (al = '5') print('6')
-;		if (al = '7') print('7')
+;		if (al = '7') print('8')
 ;		else print('9')
 cmp al,'5'
 je al_equals_5
