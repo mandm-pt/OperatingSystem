@@ -1,1 +1,1 @@
-sudo apt install -y qemu-kvm nasm hexedit
+sudo apt install -y qemu-system-x86 nasm hexedit
