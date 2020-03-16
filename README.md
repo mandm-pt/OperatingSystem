@@ -3,11 +3,18 @@ Building My-Own operating system from scratch
 
 ## Stetps
 0. [Install necessary tools](./00_necessary_tools/)
-1. Boot sector
-   1. [Basic boot sector](./01_boot_sector/basic/)
-   2. [Hello world](./01_boot_sector/hello_world/)
+1. [Boot sector](./01_boot_sector/)
+   1. Basic boot sector
+   2. Hello world
 2. [Addresses and labels](./02_addresses_and_labels/)
-
+3. Stack
+4. Control structures
+   1. Goto
+   2. If
+   3. For
+   4. Do while
+   5. While
+   
 ## References
 ### Literature
 |                            Name                             |                                    Ref link                                     |                                                         This Repo Link                                                         |
