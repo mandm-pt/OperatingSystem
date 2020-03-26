@@ -25,7 +25,7 @@ Building My-Own operating system from scratch
 |     xv6: a simple, Unix-like teaching operating system      |             [link](https://pdos.csail.mit.edu/6.828/2019/xv6.html)              |                 [download](./literature/xv6%20-%20a%20simple,%20Unix-like%20teaching%20operating%20system.pdf)                 |
 |                NASM – The Netwide Assembler                 |                          [link](https://www.nasm.us/)                           |                                              [download](./literature/nasmdoc.pdf)                                              |
 |      x86-64 Assembly Language Programming with Ubuntu       |               [link](http://www.egr.unlv.edu/~ed/assembly64.pdf)                |                          [download](./x86-64%20Assembly%20Language%20Programming%20with%20Ubuntu.pdf)                          |
-|       ORACLE - x86 Assembly Language Reference Manual       |                              [link](https://link)                               |                                 [download](./x86 Assembly%20Language%20Reference%20Manual.pdf)                                 |
+|       ORACLE - x86 Assembly Language Reference Manual       |                              [link](https://link)                               |                                 [download](./x86%20Assembly%20Language%20Reference%20Manual.pdf)                                 |
 
 ### Links
 - [Wiki OSDev](https://wiki.osdev.org/Main_Page)
