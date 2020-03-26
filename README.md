@@ -24,8 +24,8 @@ Building My-Own operating system from scratch
 |       Writing a Simple Operating System from Scratch        | [link](https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf) | [download](./literature/Writing%20a%20Simple%20Operating%20System%20from%20Scratch%20-%20Nick%20Blundell%20-%20Dec%202010.pdf) |
 |     xv6: a simple, Unix-like teaching operating system      |             [link](https://pdos.csail.mit.edu/6.828/2019/xv6.html)              |                 [download](./literature/xv6%20-%20a%20simple,%20Unix-like%20teaching%20operating%20system.pdf)                 |
 |                NASM – The Netwide Assembler                 |                          [link](https://www.nasm.us/)                           |                                              [download](./literature/nasmdoc.pdf)                                              |
-|      x86-64 Assembly Language Programming with Ubuntu       |               [link](http://www.egr.unlv.edu/~ed/assembly64.pdf)                |                          [download](./x86-64%20Assembly%20Language%20Programming%20with%20Ubuntu.pdf)                          |
-|       ORACLE - x86 Assembly Language Reference Manual       |                              [link](https://link)                               |                                 [download](./x86%20Assembly%20Language%20Reference%20Manual.pdf)                                 |
+|      x86-64 Assembly Language Programming with Ubuntu       |               [link](http://www.egr.unlv.edu/~ed/assembly64.pdf)                |                          [download](./literature/x86-64%20Assembly%20Language%20Programming%20with%20Ubuntu.pdf)                          |
+|       ORACLE - x86 Assembly Language Reference Manual       |                              [link](https://link)                               |                                 [download](./literature/x86%20Assembly%20Language%20Reference%20Manual.pdf)                                 |
 
 ### Links
 - [Wiki OSDev](https://wiki.osdev.org/Main_Page)
